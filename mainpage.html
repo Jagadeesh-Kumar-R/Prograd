@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Books Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <span><p class="title">Books Library</p></span>
+    <label class="label">Filter by</label>
+    <span class="filter">
+        <select name="filter" id="filterbooks" onchange="show()">
+            <option value="all" selected >All</option>
+            <option value="title">Title</option>
+            <option value="author">Author</option>
+            <option value="subject">Subject</option>
+            <option value="date">Published Date</option>
+        </select>
+    </span>
+    <span><input type="text" id="searchinput" value=""><button id="search" onclick="search()">search</button></span>
+    <div id="available"></div>
+    <div id="display"></div>
+    <div style="text-align: center;margin-bottom: 10;">Pages</div>
+    <div class="hrscroll" id="hrscroll"></div>
+    <script src="script.js"></script>
+</body>
+</html>
